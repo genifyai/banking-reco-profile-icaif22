@@ -1,9 +1,9 @@
 import os
 import torch
-from transformer import get_model
+from model.transformer import get_model
 from utils.metrics import *
 from torch.utils.data import Dataset
-from transformer_model import CustomDataset, logits_to_recs
+from model.transformer_model import CustomDataset, logits_to_recs
 from sklearn.cluster import KMeans
 import numpy as np
 from utils.clustering import *
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     heads = 7
     n_layers = 6
     length_history = 16
-    weights_path = "genify_recosys/weights/genify_recosys.pth"
+    weights_path = "model/weights/genify_recosys.pth"
     # those params can be changed
     n_clusters = 5
     limit_users = None  # int or None if we don't want to limit
