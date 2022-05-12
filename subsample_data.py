@@ -12,7 +12,7 @@ if __name__ == '__main__':
     If 'sample_size' is not None or 'min_data_points' > 0, it saves the sub-sampled dataset:
     - dataset_reduced: sub-sampled dataset containing (sample_size) users,
       each of them having at least 'min_data_points' timestamps.
-    USAGE: python subsample_data.py --input_file "data/train.csv" --sample_size 20000 --min_data_points 17
+    USAGE: python subsample_data.py --input_file "data/train_ver2.csv" --sample_size 20000 --min_data_points 17
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_file', type=str, required=True)
