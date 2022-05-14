@@ -294,7 +294,7 @@ def train_pipeline(args):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default="data/train.csv")
+    parser.add_argument('--dataset', type=str, default="data/train_reduced.csv")
     parser.add_argument('--batch_size', type=int, default=64)
     parser.add_argument('--seq_len', type=int, default=16)
     parser.add_argument('--n_items', type=int, default=22,
@@ -341,7 +341,7 @@ Some usage examples
 use a small dataset to make sure the code can run:
 - python model/transformer_model.py --limit_rows 100 --epochs 10 --warmup_epochs 2
 process the data without training
-- python model/transformer_model.py --save_data --no_load_data --no_train --dataset "data/train.csv"
+- python model/transformer_model.py --save_data --no_load_data --no_train --dataset "data/train_reduced.csv"
 train the model for 100 epochs with 10 warmup epochs and save final weights
 - python model/transformer_model.py --save_weights --epochs 100 --warmup_epochs 10
 load pretrained weights and test without training

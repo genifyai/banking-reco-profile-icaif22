@@ -200,7 +200,7 @@ def runXGB(train_X, train_y, seed_val=0):
 
 if __name__ == "__main__":
     """
-    USAGE: python xgb_model/xgb_model.py --train_file "data/train.csv" --test_file "data/test.csv"
+    USAGE: python xgb_model/xgb_model.py --train_file "data/train_split.csv" --test_file "data/test_split.csv"
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--train_file', type=str, default="train.csv")

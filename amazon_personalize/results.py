@@ -19,12 +19,12 @@ if __name__ == '__main__':
     history: csv file containing the owned items during the N-1 timestamps
     ownership: bool, whether compute metrics on items ownership or acquisition
     it outputs the metrics relative to the recommendations predicted by Amazon Personalize
-    USAGE: python amazon_personalize/results.py --predictions data/input_aws.json.out --ground_truth data/test.csv
+    USAGE: python amazon_personalize/results.py --predictions amazon_personalize/input_aws.json.out --ground_truth data/test_split.csv
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--predictions', type=str, required=True)
     parser.add_argument('--ground_truth', type=str, required=True)
-    parser.add_argument('--history', type=str, default="data/train.csv")
+    parser.add_argument('--history', type=str, default="data/train_reduced.csv")
     parser.add_argument('--ownership', default=False, action='store_true')
     args = parser.parse_known_args()[0]
     predictions = args.predictions

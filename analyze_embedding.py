@@ -60,7 +60,7 @@ if __name__ == '__main__':
     heads = 7
     n_layers = 6
     length_history = 16
-    weights_path = "model/weights/genify_recosys.pth"
+    weights_path = "model/weights/weights.pth"
     # those params can be changed
     n_clusters = 5
     limit_users = None  # int or None if we don't want to limit

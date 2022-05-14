@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "Users",
+  "namespace": "com.amazonaws.personalize.schema",
+  "fields": [
+      {
+          "name": "USER_ID",
+          "type": "string"
+      },
+      {
+          "name": "age",
+          "type": "int"
+      },
+          {
+          "name": "ind_nuevo",
+          "type": "int"
+      },
+      {
+          "name": "antiguedad",
+          "type": "int"
+      },
+      {
+          "name": "renta",
+          "type": "float"
+      },
+          {
+          "name": "segmento",
+          "type": "string",
+          "categorical": true
+      }
+  ],
+  "version": "1.0"
+}

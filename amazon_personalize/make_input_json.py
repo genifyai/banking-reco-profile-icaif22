@@ -19,7 +19,7 @@ if __name__ == '__main__':
     users = np.unique(df[['USER_ID']], axis=0)
     print("total users:", len(users))
 
-    with open('data/input_aws.json', 'w+') as f:
+    with open('amazon_personalize/input_aws.json', 'w+') as f:
         for i in users:
             f.write('{"userId": "' + str(i[0]) + '"}' + '\n')
 

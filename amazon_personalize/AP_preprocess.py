@@ -73,7 +73,7 @@ if __name__ == '__main__':
       5 most important features.
     - interactions_data.csv: csv file containing users interactions according to the format wanted by AP which is
       defined here: https://docs.aws.amazon.com/personalize/latest/dg/data-prep-formatting.html.
-    USAGE: python amazon_personalize/AP_preprocess.py --input_file "data/train.csv" --output_user_data "data/users_data.csv" --output_interactions_data "data/interactions_data.csv"
+    USAGE: python amazon_personalize/AP_preprocess.py --input_file "data/train_reduced.csv" --output_user_data "data/users_data.csv" --output_interactions_data "data/interactions_data.csv"
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_file', type=str, required=True)
