@@ -1,4 +1,6 @@
-# Code for the paper XXXX submitted at CIKM'22.
+# Code for the paper *Sequential Banking Products Recommendation and User Profiling in One Go* submitted at ICAIF'22.
+
+## Dataset preparation
 
 The Santander products recommendation dataset used in our experiments can be downloaded from [here](https://www.kaggle.com/c/santander-product-recommendation/data?select=train_ver2.csv.zip).
 In particular, what we need is the file `train_ver2.csv` which we rename to `train.csv` can put in the folder `data`.
@@ -39,7 +41,6 @@ Default evaluation is on acquisition, but you can evaluate the model on the item
 ```
 python model/evaluation.py --ownership
 ```
-
 
 ## Train XGBoost
 
@@ -123,3 +124,7 @@ You can run the clustering algorithm with the command:
 ```
 python analyze_embedding.py
 ```
+
+## Cite us
+
+TODO
