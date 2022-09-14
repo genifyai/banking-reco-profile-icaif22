@@ -1,5 +1,9 @@
 # Code for the paper *Sequential Banking Products Recommendation and User Profiling in One Go* submitted at ICAIF'22.
 
+|  End-to-end pipeline   |  Self-attention model  |
+|:----------------------:|:----------------------:|
+| ![](images/model1.png) | ![](images/model2.png) |
+
 ## Dataset preparation
 
 The Santander products recommendation dataset used in our experiments can be downloaded from [here](https://www.kaggle.com/c/santander-product-recommendation/data?select=train_ver2.csv.zip).
@@ -124,6 +128,7 @@ You can run the clustering algorithm with the command:
 ```
 python analyze_embedding.py
 ```
+![clustering](images/clustering.png?raw=true)
 
 ## Cite us
 
